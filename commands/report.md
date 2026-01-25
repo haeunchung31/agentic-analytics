@@ -31,3 +31,4 @@ Convert technical findings into a business narrative, saved in the project's rep
 ## References
 - **Input**: `src/[project_name]/intermediate/analysis_results.md`
 - **Output**: `src/[project_name]/report/`
+- **Skills**: Uses `skills/storytelling.md` for narrative structure.

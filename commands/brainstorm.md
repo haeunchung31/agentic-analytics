@@ -9,9 +9,21 @@ Focuses purely on **problem definition**—clarifying "what are we trying to ans
 
 ## Workflow Steps
 
-### 1. **Gather Context**
-- Collect all snippets, notes, stakeholder comments, and background information.
-- Identify the business function or domain.
+### 1. **Determine Execution Mode**
+Select the mode that matches the user's clarity level:
+
+*   **Mode A (Targeted)**: User has a clear business question.
+    *   *Action*: Proceed strictly to Hypothesis Formation.
+*   **Mode B (Exploratory)**: User has a fuzzy goal (e.g., "Why is churn up?").
+    *   *Action*: Trigger broad EDA first. Do not formulate specific hypotheses yet.
+    *   *Output*: Draft a "Research Question" instead of Hypothesis.
+*   **Mode C (Ideation)**: User has no idea.
+    *   *Action*: Engaged in Socratic Loop. Ask: "What is the key metric?", "What decision is pending?".
+
+### 2. **Gather Context**
+- **Messy Phase**: Acknowledge that the first step is often exploring vague questions.
+- **Action**: Collect all snippets, notes, stakeholder comments, and background information.
+- **Goal**: Move from "Confusion" to "Clarity".
 
 ### 2. **Iterative Question Refinement**
 - Ask clarifying questions to sharpen the business question:
@@ -48,3 +60,4 @@ project: [project_name]
 - **Output**: `src/[project_name]/intermediate/brainstorm.md`
 - **Next Step**: `/design src/[project_name]/intermediate/brainstorm.md`
 - **Agents**: Invokes `agents/strategist.md` and `agents/orchestrator.md`
+- **Skills**: Uses `skills/analysis/kpi.md` for metric definition.

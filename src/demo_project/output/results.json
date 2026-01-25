@@ -1,0 +1,11 @@
+{
+    "h1_seasonality": {
+        "mean_sep": 1087.5,
+        "mean_oct_nov": 830.0,
+        "p_value": 0.0034583652088938945,
+        "significant": true
+    },
+    "h2_correlation": {
+        "correlation": 0.9804891577877453
+    }
+}

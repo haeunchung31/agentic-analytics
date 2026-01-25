@@ -14,6 +14,7 @@ This repository operates on a strict **Project-Based Workflow** controlled by sl
 ### 2. Brainstorm (`/brainstorm`)
 **Command**: `/brainstorm [project_name]`
 - **Goal**: Define the *real* business problem.
+- **Modes**: Targeted (Hypothesis), Exploratory (EDA first), or Ideation (Socratic).
 - **Agents**: Strategist + Orchestrator.
 - **Output**: `src/[project_name]/intermediate/brainstorm.md`.
 
@@ -25,9 +26,10 @@ This repository operates on a strict **Project-Based Workflow** controlled by sl
 
 ### 4. Analyze (`/analyze`)
 **Command**: `/analyze src/[project_name]/intermediate/design.md`
-- **Goal**: Execute reproducible Python analysis.
+- **Goal**: Execute reproducible Python analysis for **all** planned hypotheses (batch execution).
+- **Rules**: **Mandatory EDA** before Hypothesis Testing.
 - **Agents**: Data Scientist.
-- **Output**: Scripts (`src/[project_name]/*.py`) and Results (`src/[project_name]/output/`).
+- **Output**: `eda_overview.md`, Scripts (`*.py`), and Results (`output/`).
 
 ### 5. Report (`/report`)
 **Command**: `/report src/[project_name]/intermediate/analysis_results.md`
@@ -44,8 +46,8 @@ This repository operates on a strict **Project-Based Workflow** controlled by sl
 ├── agents/             # Agent Personas (Orchestrator, Strategist, DS, DE)
 ├── commands/           # Slash command definitions (The Workflow Engine)
 ├── knowledge_base/     # Business context and Schema definitions
-├── rules/              # Global constraints (e.g., Structure, Security)
-├── skills/             # Reusable methodologies (EDA, Stats, Reporting)
+├── rules/              # Global constraints (Privacy, Structure)
+├── skills/             # Modular Capabilities (Statistics, Strategy, Viz, etc.)
 └── src/                # Project Workspace (Where the work happens)
     └── [project_name]/ # Isolated project instances
 ```
