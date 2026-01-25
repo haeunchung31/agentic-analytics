@@ -39,5 +39,5 @@ description: "Standard End-to-End Analytical Workflow. From Request to Final Ins
 - **Statistics**: See `skills/statistics.md`.
 - **Strategy**: See `skills/strategy.md`.
 - **Storytelling**: See `skills/storytelling.md`.
-- **EDA**: See `skills/eda.md`.
+- **EDA**: See `skills/analysis/eda.md`.
 - **Structure**: See `rules/structure.md`.

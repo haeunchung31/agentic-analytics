@@ -12,12 +12,14 @@ Run the analysis using scripts within the project directory.
 - Read `src/[project_name]/intermediate/design.md`.
 - Determine paths for input (`src/[project_name]/input/`) and output (`src/[project_name]/output/`).
 
-### 2. **Data Acquisition & Prep**
-- Write `src/[project_name]/01_data_prep.py`.
-- Load data from `input/` or execute SQL from `sql/`.
+### 2. **Exploratory Data Analysis (Mandatory)**
+- **Rule**: You MUST run EDA before Hypothesis Testing.
+- **Action**: Execute checks from `skills/analysis/eda.md`.
+- **Output**: Save summary to `src/[project_name]/intermediate/eda_overview.md`.
 
 ### 3. **Hypothesis Testing Execution**
-- Write analysis scripts (e.g., `src/[project_name]/02_analysis.py`).
+- **Action**: Iterate through **ALL** hypotheses defined in `design.md`.
+- Write analysis scripts (e.g., `src/[project_name]/02_analysis.py`) to test them in a single batch.
 - Save plots to `src/[project_name]/output/figures/`.
 - Save results to `src/[project_name]/output/results.json`.
 

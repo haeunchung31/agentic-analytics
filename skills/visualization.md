@@ -3,7 +3,17 @@
 **Owner**: Data Scientist & Orchestrator
 **Purpose**: Ensure all visual outputs are "Premium", clean, and self-explanatory.
 
-## 1. General Principles
+## 1. Critical Standards (Must Follow)
+- **Financial Specifics**:
+    - **Units**: Never use scientific notation. Use **조/억/만** for large currency amounts.
+    - **Fonts**: Must configure Korean fonts first.
+- **Anti-Patterns**:
+    - ❌ **Scientific Notation**: Never use it.
+    - ❌ **Bar Charts with Error Bars**: Avoid for non-normal financial data. Use Violin/Box plots.
+    - ❌ **Pie Charts**: Generally avoid.
+    - ❌ **3D Charts**: Never use.
+
+## 2. General Principles
 - **Less is More**: Remove "chart junk" (excessive gridlines, borders, background colors).
 - **Direct Labeling**: Avoid legends if possible. Label lines/bars directly.
 - **Title as Headline**: The title should state the insight (e.g., "Conversion dropped 15% in May") not the metric (e.g., "Monthly Conversion Rate").
